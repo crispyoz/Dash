@@ -1,0 +1,15 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	fragment@0 {
+		target-path = "/leds";
+		__overlay__ {
+			wifi  {
+				label = "omega2dash:blue:wifi";
+				gpios = <&gpio 44 0x01>;
+			};
+		};
+	};
+};
+

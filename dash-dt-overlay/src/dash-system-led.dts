@@ -1,0 +1,17 @@
+/dts-v1/;
+/plugin/;
+
+/ {
+	fragment@0 {
+		target-path = "/leds";
+		__overlay__ {
+			system  {
+				label = "omega2dash:amber:system";
+				gpios = <&gpio 43 0x01>;
+			};
+		};
+	};
+};
+
+
+
